@@ -1,124 +1,70 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5; 
+* {
   margin: 0;
   padding: 0;
-  color: #4a4a4a;
+  box-sizing: border-box;
 }
 
-.container {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 20px;
-}
-
-.header {
-  text-align: center;
-  background-color: #ffe0ec; 
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
-}
-
-.header h1 {
-  color: #d63384; 
-  margin: 0;
-  font-size: 28px;
-}
-
-.contact {
-  font-size: 16px;
-  color: #7a4e6c;
-}
-
-.section {
-  background-color: #fff5fa; 
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(240, 128, 128, 0.2);
-}
-
-.section h2 {
-  color: #c71585; 
-  font-size: 20px;
-  border-bottom: 2px solid #f8cce3;
-  padding-bottom: 6px;
-  margin-bottom: 12px;
-}
-
-.item h3 {
-  color: #a0526d; 
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills li {
-  background-color: #ffc0cb; 
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+
+  background: url("images/galaxy.jpg") no-repeat center center/cover;
 }
 
-a {
-  color: #c71585;
-  text-decoration: none;
+.hero h1 {
+  font-size: 2.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .header {
-    flex-basis: 100%;
-  }
-
-  .section {
-    flex: 1 1 calc(50% - 20px);
-    margin-bottom: 20px;
-  }
-}
-
-.projects .item {
-  background-color: #fff0f8;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(255, 192, 203, 0.3);
-  margin-bottom: 16px;
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #d63384;
-  color: white;
+  background: white;
+  color: #a16ae8;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 12px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #a02660;
+  background: #31037b;
 }
 
+
+/* Footer */
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.8rem;
+  background: #321a58ce;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
